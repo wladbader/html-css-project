@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Yeseva+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Yeseva One', cursive;
+
+    max-width: 100vw;
+
+}
+
+.header {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.intro {
+    height: 790px;
+    margin: 0;
+
+    background: url(images/intro-background.png
+    ) center no-repeat;
+    background-color: #494949;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.container {
+    width: 100%;
+    max-width: 1236px;
+    margin: 0 134px;
+
+    position: relative;
+}
+
+.nav__bar {
+    height: 83px;
+    background-color: #131313;
+    display: flex;
+
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.nav__bar_inner {
+    width: 100%;
+    margin: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #E3B873;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 581px;
+}
+
+.nav__link {
+    color: #fff;
+}
+
+.nav__link_active {
+    color: #E3B873;
+}
+
+.button {
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.nav__button {
+    padding: 13px 33px;
+    background-color: #E3B873;
+    color: #fff;
+    border: 0;
+}
+
+.nav__button:hover {
+    background-color: #da9f3f;
+    transition: .2s linear;
+}
+
+.nav__number {
+    color: #E3B873;
+    margin-right: 45px;
+}
+
+.intro__contents {
+    position: absolute;
+    margin: 208px 0;
+}
+
+.intro__title {
+    width: 45%;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.intro__subtitle {
+    width: 45%;
+
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+
+    margin: 20px 0;
+}
+
+.intro__button_1 {
+    padding: 20px 40px;
+    background-color: #E3B873;
+    color: #fff;
+    border: 0;
+}
+
+.intro__button_1:hover {
+    background-color: #da9f3f;
+    transition: .2s linear;
+}
+
+.intro__button_2 {
+    padding: 19px 30px;
+    margin-left: 15px;
+    background: none;
+    color: #fff;
+    border: 1px #fff solid;
+}
+
+.intro__button_2:hover {
+    background-color: #E3B873;
+    border: 0;
+    padding: 20px 30px;
+    transition: .2s linear;
+}
+
+.projects {
+    height: 1074px;
+    background-color: #131313;
+}
