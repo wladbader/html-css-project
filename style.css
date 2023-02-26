@@ -150,6 +150,7 @@ body {
 }
 
 .projects {
+    padding: 0.1px;
     margin: 0;
     height: 1074px;
     background-color: #131313;
@@ -164,6 +165,7 @@ body {
 .projects__description {
     width: 40%;
     margin-top: 30px;
+    position: relative;
 }
 
 .projects__text {
@@ -253,5 +255,17 @@ body {
 }
 
 .video__title {
-    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+
+    width: 280px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
 }
