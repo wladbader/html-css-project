@@ -257,4 +257,5 @@ body {
 
 .video__title {
     position: absolute;
+    bottom: 0;
 }
