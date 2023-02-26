@@ -150,14 +150,12 @@ body {
 }
 
 .projects {
-    position: relative;
+    margin: 0;
     height: 1074px;
     background-color: #131313;
-    margin: 0;
 }
 
 .projects__contents {
-    position: absolute;
     margin: 107px auto;
     display: flex;
     justify-content: space-between;
@@ -166,7 +164,6 @@ body {
 .projects__description {
     width: 40%;
     margin-top: 30px;
-    position: relative;
 }
 
 .projects__text {
@@ -257,5 +254,4 @@ body {
 
 .video__title {
     position: absolute;
-    bottom: 0;
 }
