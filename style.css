@@ -9,10 +9,6 @@ body {
 
 }
 
-.header {
-    font-family: 'Nunito Sans', sans-serif;
-}
-
 .intro {
     height: 790px;
     margin: 0;
@@ -27,9 +23,13 @@ body {
 .container {
     width: 100%;
     max-width: 1236px;
-    margin: 0 134px;
+    margin: 0 auto;
 
     position: relative;
+}
+
+.nunito, p {
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .nav__bar {
@@ -40,7 +40,6 @@ body {
     font-size: 11px;
     font-weight: 400;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 .nav__bar_inner {
@@ -74,6 +73,8 @@ body {
     display: inline-block;
     text-transform: uppercase;
     border-radius: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
 }
 
 .button:hover {
@@ -95,6 +96,7 @@ body {
 .nav__number {
     color: #E3B873;
     margin-right: 45px;
+    text-decoration: none;
 }
 
 .intro__contents {
@@ -115,7 +117,6 @@ body {
     width: 45%;
 
     color: #fff;
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 22px;
 
@@ -143,21 +144,21 @@ body {
 }
 
 .intro__button_2:hover {
-    background-color: #E3B873;
+    background-color: #da9f3f;
     border: 0;
-    padding: 20px 30px;
-    transition: .2s linear;
+    padding-left: 31px;
+    transition: .01s linear;
 }
 
 .projects {
     padding: 0.1px;
     margin: 0;
-    height: 1074px;
+    height: 1200px;
     background-color: #131313;
 }
 
 .projects__contents {
-    margin: 107px auto;
+    margin: 107px 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -172,7 +173,6 @@ body {
     color: #fff;
     font-weight: 400;
     font-size: 14px;
-    font-family: 'Nunito Sans', sans-serif;
     line-height: 30px;
 }
 
@@ -204,7 +204,6 @@ body {
     color: #fff;
     font-weight: 400;
     font-size: 13px;
-    font-family: 'Nunito Sans', sans-serif;
     line-height: 7px;
 }
 
@@ -254,14 +253,14 @@ body {
     bottom: 0;
 }
 
-.video__title {
+.section__title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 20px;
 
     width: 280px;
-    margin: 0 auto;
+    margin: 70px auto 30px;
 
     display: flex;
     flex-direction: column;
@@ -270,7 +269,155 @@ body {
     text-align: center;
 }
 
-.video__title img {
+.section__title img {
     width: 180px;
     height: auto;
+}
+
+.demo__video {
+    display: block;
+    width: 60%;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+.online__control {
+    display: block;
+    height: 700px;
+    position: relative;
+}
+
+.online__control_inner {
+    position: absolute;
+    top: -470px;
+}
+
+.online__control_description {
+    width: 45%;
+    height: auto;
+    font-weight: 400;
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+    line-height: 37px;
+
+    margin: 0 auto 80px;
+}
+
+.online__control_description::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 55px;
+    background-color: #E3B873;
+
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grab__details_form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 769px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.input__title {
+    margin: 0;
+    font-size: 13px;
+}
+
+.name__input {
+    border: none;
+    outline: none;
+    border-bottom: 2px #ccc solid;
+
+
+    padding-bottom: 8px;
+    padding-left: 0;
+    margin-top: 3px;
+    width: 230px;
+}
+
+.name__input::placeholder {
+    color: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.submit__button {
+    width: 200px;
+    height: 50px;
+    background-color: #E3B873;
+    border: 0;
+    color: #fff;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 35px auto 0;
+}
+
+.checkbox span {
+    padding-left: 5px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+#checkbox1:checked {
+    background-color: #E3B873;
+    color: #fff;
+}
+
+.types_of_repair {
+    height: 1000px;
+}
+
+#tor1 {
+    color: #000;
+}
+
+.repair__elements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.repair__element {
+    margin: 15px;
+    max-width: 360px;
+    position: relative;
+}
+
+.repair__element img {
+    max-width: inherit;
+}
+
+.element_desc {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    bottom: -125px;
+    left: 35px;
+    padding-right: 70px;
+}
+
+.element_desc > h2 {
+    color: #363636;
+    padding-left: 23px;
+    font-size: 18px;
+}
+
+ul {
+    color: #959595;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 13px;
 }
