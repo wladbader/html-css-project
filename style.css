@@ -377,7 +377,7 @@ body {
 }
 
 .types_of_repair {
-    height: 1000px;
+    height: 2000px;
 }
 
 #tor1 {
@@ -388,6 +388,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 300px;
 }
 
 .repair__element {
@@ -404,7 +405,7 @@ body {
     display: block;
     position: absolute;
     background-color: #fff;
-    bottom: -125px;
+    bottom: -160px;
     left: 35px;
     padding-right: 70px;
 }
@@ -420,4 +421,64 @@ ul {
     font-weight: 400;
     line-height: 25px;
     font-size: 13px;
+}
+
+.element_desc_btn {
+    padding: 12px 21.44px;
+    background-color: #E3B873;
+    color: #fff;
+
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 0%;
+}
+
+.request__form_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stages__list {
+    background: url(images/sketch-bg.jpg) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 645px;
+
+    position: relative;
+    left: -150px;
+}
+
+.stages__list_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    margin-top: 65px;
+}
+
+.stages__list_el {
+    display: flex;
+    align-items: center;
+    margin-left: 225px;
+}
+
+.el_number {
+    padding: 10px;
+    background-color: #E3B873;
+    border-radius: 50%;
+    font-family: 'Yeseva One', serif;
+    color: #fff;
+    border: 8px #fff solid;
+}
+
+.request__form {
+    width: 500px;
+    height: 500px;
+    background-color: #131313;
+    color: #fff;
+    margin-top: 60px;
 }
