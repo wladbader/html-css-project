@@ -349,6 +349,10 @@ body {
     font-weight: 700;
 }
 
+.input__name:focus::placeholder {
+    color: transparent;
+}
+
 .submit__button {
     width: 200px;
     height: 50px;
@@ -377,7 +381,7 @@ body {
 }
 
 .types_of_repair {
-    height: 2000px;
+    height: 1900px;
 }
 
 #tor1 {
@@ -481,6 +485,7 @@ ul {
     background-color: #131313;
     color: #fff;
     margin-top: 60px;
+    position: relative;
 }
 
 .request__form_title {
@@ -492,7 +497,11 @@ ul {
 }
 
 .field__input {
-    margin: 50px;
+    margin: 45px;
+}
+
+.field__input:nth-child(4) {
+    margin-bottom: 10px;
 }
 
 .title__input {
@@ -517,9 +526,36 @@ ul {
     font-size: 14px;
 }
 
+.name__input:focus::placeholder {
+    color: transparent;
+}
+
 .checkbox2 {
     display: flex;
     align-items: center;
     width: fit-content;
-    margin-left: 50px;
+    margin: 0 50px 15px;
+}
+
+.request__form_button {
+    padding: 19px 25px;
+    background-color: #E3B873;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    position: absolute;
+    right: 50px;
+}
+
+.saving__notification {
+    display: flex;
+    align-items: center;
+    margin-left: 65%;
+    font-weight: 700;
+    color: #da9f3f;
+    width: 350px;
+}
+
+.savings_text {
+    margin-left: 20px;
 }
