@@ -330,7 +330,7 @@ body {
     font-size: 13px;
 }
 
-.name__input {
+.input__name {
     border: none;
     outline: none;
     border-bottom: 2px #ccc solid;
@@ -342,7 +342,7 @@ body {
     width: 230px;
 }
 
-.name__input::placeholder {
+.input__name::placeholder {
     color: #000;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
@@ -481,4 +481,45 @@ ul {
     background-color: #131313;
     color: #fff;
     margin-top: 60px;
+}
+
+.request__form_title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    width: 280px;
+    margin: 28px auto 0;
+}
+
+.field__input {
+    margin: 50px;
+}
+
+.title__input {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin: 7px 0;
+    font-size: 13px;
+}
+
+.name__input {
+    width: 400px;
+    border: none;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+    padding-bottom: 5px;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+
+.name__input::placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+.checkbox2 {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: 50px;
 }
