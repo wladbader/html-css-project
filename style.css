@@ -559,3 +559,78 @@ ul {
 .savings_text {
     margin-left: 20px;
 }
+
+.styles__section {
+    height: 870px;
+    width: 100%;
+    background: url(images/styles-bg.jpg) no-repeat;
+    background-color: #494949;
+    background-blend-mode: multiply;
+}
+
+.styles__contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.styles__title {
+    font-size: 27px;
+    color: #E3B873;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 137px;
+}
+
+.styles__pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 65%;
+
+    margin-top: -60px;
+}
+
+.styles__pictures-column-right {
+    margin-top: -100px;
+}
+
+.styles__pictures img {
+    margin: 20px;
+}
+
+.styles__list {
+    padding-left: 0;
+}
+
+.styles__list li {
+    width: fit-content;
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.styles__list li:hover {
+    color: #E3B873;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+.styles__list li::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: auto;
+    background-color: #E3B873;
+    visibility: hidden;
+    margin-top: -9px;
+}
+
+.styles__list li:hover::after {
+    visibility: visible;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+.clients__section {
+    height: 1500px;
+}
