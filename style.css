@@ -293,7 +293,7 @@ body {
     top: -470px;
 }
 
-.online__control_description {
+.section__description {
     width: 45%;
     height: auto;
     font-weight: 400;
@@ -305,7 +305,7 @@ body {
     margin: 0 auto 80px;
 }
 
-.online__control_description::before {
+.section__description::before {
     content: "";
     display: block;
     height: 2px;
@@ -625,12 +625,85 @@ ul {
     margin-top: -9px;
 }
 
-.styles__list li:hover::after {
+.styles__list li:hover:after {
     visibility: visible;
     transition: .2s linear;
     cursor: pointer;
 }
 
 .clients__section {
-    height: 1500px;
+    height: 1000px;
+    background-image: url(images/clients-bg.png);
+}
+
+.clients__title {
+    color: #181818;
+    margin-top: 60px;
+}
+
+#clients__description::before {
+    display: none;
+}
+
+.clients__section-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients__section-element {
+    display: block;
+    width: 376px;
+    height: 428px;
+    background-color: #fff;
+    box-shadow: 0 10px 50px hsl(0deg 0% 0% / 4%);
+    position: relative;
+}
+
+.cs__element-header {
+    display: flex;
+    align-items: center;
+}
+
+.client__avatar {
+    height: 76px;
+    width: 76px;
+    margin-left: 10px;
+}
+
+.client__name {
+    padding-left: 30px;
+    font-weight: 400;
+}
+
+.client__review {
+    line-height: 23.4px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.client__details_box {
+    width: 293.75px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    background-color: #E3B873;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    position: absolute;
+    box-shadow: 5px 5px 20px hsla(37, 67%, 67%, 0.5);
+}
+
+.details_separator {
+    height: -webkit-fill-available;
+    margin: 0;
+    background-color: #fff;
+    border: none;
+    width: 1px;
+}
+
+.value {
+    text-transform: uppercase;
+    color: #fff;
 }
