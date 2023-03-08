@@ -633,7 +633,8 @@ ul {
 
 .clients__section {
     height: 1000px;
-    background-image: url(images/clients-bg.png);
+    background: url(images/clients-bg.png) repeat-x;
+    background-position: bottom;
 }
 
 .clients__title {
