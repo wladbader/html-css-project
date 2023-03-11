@@ -392,12 +392,13 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 300px;
+    margin-bottom: 165px;
 }
 
 .repair__element {
     margin: 15px;
     max-width: 360px;
+    height: 550px;
     position: relative;
 }
 
@@ -409,7 +410,7 @@ body {
     display: block;
     position: absolute;
     background-color: #fff;
-    bottom: -160px;
+    bottom: -3px;
     left: 35px;
     padding-right: 70px;
 }
@@ -632,7 +633,7 @@ ul {
 }
 
 .clients__section {
-    height: 1000px;
+    height: 1200px;
     background: url(images/clients-bg.png) repeat-x;
     background-position: bottom;
 }
@@ -707,4 +708,119 @@ ul {
 .value {
     text-transform: uppercase;
     color: #fff;
+}
+
+.bottom__section {
+    height: 970px;
+    background-size: cover;
+    background: url(images/bottom-section-bg.jpg), linear-gradient(to bottom, rgba(24, 24, 24, 0.9), rgba(24, 24, 24, 0.72)) no-repeat right;
+    background-blend-mode: multiply;
+}
+
+.qa__form {
+    height: 445.3px;
+    width: 883px;
+    background-color: #181818;
+    margin: -215px 14% 0;
+    position: absolute;
+}
+
+.qa__form input {
+    background: none;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.qa__form input::placeholder {
+    color: #fff;
+}
+
+.qa__form input:focus::placeholder {
+    color: transparent;
+}
+
+.qa__form-title {
+    margin: 35px auto 45px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+    width: fit-content;
+}
+
+.qa__form-fields {
+    width: 517px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qa__form-field {
+    margin-bottom: 20px;
+}
+
+.qa__form-field h4 {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+
+.qa__form-input {
+    width: 231px;
+}
+
+.qa__form-question {
+    width: 517px;
+    margin: 0 auto 30px;
+}
+
+.qa__form-input-question {
+    width: 100%;
+}
+
+.qa__form-question h4 {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.checkbox3 {
+    width: fit-content;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+button[type="submit"] {
+    border-radius: 0%;
+    margin: 0 auto;
+    left: 341px;
+    position: absolute;
+}
+
+.address {
+    color: #E3B873;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    width: 590px;
+    top: 294px;
+    left: 314px;
+    position: absolute;
+}
+
+.contact__links {
+    width: 71px;
+    display: flex;
+    justify-content: space-between;
+    margin: 380px 570px 0;
+    position: absolute;
 }
