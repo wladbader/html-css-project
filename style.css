@@ -408,6 +408,10 @@ body {
     margin: 35px auto 0;
 }
 
+.checkbox_mobile {
+    display: none;
+}
+
 .checkbox span {
     padding-left: 5px;
     font-weight: 600;
@@ -975,7 +979,7 @@ button[type="submit"] {
     }
 
     .projects {
-        height: 1350px;
+        height: 1450px;
     }
 
     .projects__slider {
@@ -992,7 +996,7 @@ button[type="submit"] {
 
     .online__control_inner {
         width: 100%;
-        top: -695px;
+        top: -789px;
     }
 
     .section__title {
@@ -1032,6 +1036,7 @@ button[type="submit"] {
 
     .input__field {
         margin-bottom: 30px;
+        width: 95%;
     }
 
     .input__title {
@@ -1044,6 +1049,8 @@ button[type="submit"] {
         border: 0;
         border-bottom: 0.5px #fff solid;
         font-size: 14px;
+        width: 100%;
+        color: #fff;
     }
 
     .input__name::placeholder {
@@ -1053,5 +1060,24 @@ button[type="submit"] {
 
     .submit__button {
         width: 100%;
+    }
+
+    .checkbox_desktop {
+        display: none;
+    }
+
+    .checkbox_mobile {
+        display: block;
+        margin-bottom: 74px;
+        margin-left: 4px;
+        margin-top: 0;
+    }
+
+    .checkbox_mobile span {
+        color: #fff;
+    }
+
+    .online__control {
+        height: 85px;
     }
 }
