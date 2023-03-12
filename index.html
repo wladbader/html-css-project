@@ -30,7 +30,7 @@
                 </div>
             </nav>
         </header>
-        <div class="intro">
+        <section class="intro">
             <div class="container">
                 <div class="intro__contents">
                     <div class="intro__title">
@@ -43,12 +43,15 @@
                     <button class="button intro__button_1 nunito">
                             Calculate the cost
                      </button>
-                     <button class="button intro__button_2 nunito">
+                     <button class="button intro__button_2 nunito" id="intro__button_2">
                             Submit your application
                      </button>
+                     <button class="button intro__button_2 nunito" id="intro__button_3">
+                        Application
+                    </button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="projects">
             <div class="container">
@@ -60,6 +63,22 @@
                         <p class="projects__text">
                             Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
                         </p>
+
+                        <div class="projects__pic_block" id="projects__pic_block-mobile">
+                            <div class="pic__links">
+                                <a class="pic__link" href="#">
+                                    Rostov-on-Don, Admiral
+                                </a>
+                                <a class="pic__link"  href="#">
+                                    Sochi Thieves
+                                </a>
+                                <a class="pic__link"  href="#">
+                                    Rostov-on-Don Patriotic
+                                </a>
+                            </div>
+                                
+                            <img class="projects-examples" src="images/projects_pic.png" alt="projects examples">
+                        </div>
 
                         <div class="projects__details">
                             <div class="projects__detail">
@@ -101,7 +120,7 @@
                         <img class="projects__slider" src="images/slider.png">
                     </div>
 
-                    <div class="projects__pic_block">
+                    <div class="projects__pic_block" id="projects__pic_block-desktop">
                         <div class="pic__links">
                             <a class="pic__link" href="#">
                                 Rostov-on-Don, Admiral
@@ -114,7 +133,10 @@
                             </a>
                         </div>
                             
-                        <img src="images/projects_pic.png" alt="projects examples">
+                        <img class="projects-examples" src="images/projects_pic.png" alt="projects examples">
+
+                        <button class="slider__btn"><img src="images/arrow-left.svg" alt="sliding to the left"></button>
+                        <button class="slider__btn"><img src="images/arrow-right.svg" alt="sliding to the right"></button>
                     </div>
                 </div>
             </div>
