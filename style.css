@@ -130,6 +130,7 @@ body {
     color: #fff;
     border: 0;
     font-size: 11px;
+    font-style: italic;
     width: 207px;
     height: 51px;
 }
@@ -146,6 +147,7 @@ body {
     color: #fff;
     border: 1px #fff solid;
     font-size: 11px;
+    font-style: italic;
     width: 207px;
     height: 51px;
 }
@@ -227,8 +229,26 @@ body {
     display: none;
 }
 
-.slider__btn {
+.slider_with_arrows {
+    position: relative;
+}
+
+.slider__btn-left {
+    position: absolute;
     display: none;
+    background-color: transparent;
+    bottom: 102px;
+    left: 0px;
+    border: none;
+}
+
+.slider__btn-right {
+    position: absolute;
+    display: none;
+    background-color: transparent;
+    bottom: 100px;
+    border: none;
+    right: 0px;
 }
 
 .pic__links {
@@ -950,12 +970,88 @@ button[type="submit"] {
         display: none;
     }
 
-    .slider__btn {
+    .slider__btn-left, .slider__btn-right {
         display: block;
-        position: absolute;
+    }
+
+    .projects {
+        height: 1350px;
     }
 
     .projects__slider {
         display: none;
+    }
+
+    .detail__name {
+        font-size: 14px;
+    }
+
+    .detailed {
+        font-size: 11px;
+    }
+
+    .online__control_inner {
+        width: 100%;
+        top: -695px;
+    }
+
+    .section__title {
+        font-size: 22px;
+        font-weight: 100;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #img1 {
+        width: 120px;
+        height: auto;
+    }
+
+    .demo__video {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .section__description {
+        font-size: 11px;
+        color: #fff;
+        line-height: 18.68px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .slim_header {
+        font-weight: 200;
+        font-size: 22px;
+    }
+
+    .grab__details_form {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .input__field {
+        margin-bottom: 30px;
+    }
+
+    .input__title {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 13px;
+    }
+
+    .input__name {
+        background: none;
+        border: 0;
+        border-bottom: 0.5px #fff solid;
+        font-size: 14px;
+    }
+
+    .input__name::placeholder {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .submit__button {
+        width: 100%;
     }
 }
