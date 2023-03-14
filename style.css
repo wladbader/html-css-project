@@ -428,7 +428,7 @@ body {
     height: 1900px;
 }
 
-#tor1 {
+.types_of_repair .section__title {
     color: #000;
 }
 
@@ -457,6 +457,7 @@ body {
     bottom: -3px;
     left: 35px;
     padding-right: 70px;
+    box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.03);
 }
 
 .element_desc > h2 {
@@ -616,6 +617,10 @@ ul {
 .styles__contents {
     display: flex;
     justify-content: space-between;
+}
+
+.styles__section-slider {
+    display: none;
 }
 
 .styles__title {
@@ -869,6 +874,14 @@ button[type="submit"] {
     position: absolute;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: inline-block;
+}
+
 @media screen and (max-width: 375.5px) {
     .container {
         width: 90%;
@@ -1079,5 +1092,121 @@ button[type="submit"] {
 
     .online__control {
         height: 85px;
+    }
+
+    .types_of_repair {
+        height: 1940px;
+    }
+
+    .types_of_repair .section__title h2 {
+        font-size: 22px;
+        font-weight: 200;
+    }
+
+    .types_of_repair .section__title > img {
+        width: 120px;
+        height: auto;
+    }
+
+    .repair__elements {
+        flex-direction: column;
+    }
+
+    .repair__element {
+        max-width: 100%;
+        height: 500px;
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .element_desc {
+        width: 239px;
+        bottom: 5px;
+        left: 0;
+        padding-right: 22px;
+    }
+
+    .element_desc > h2 {
+        font-size: 15px;
+    }
+
+    .element_desc_btn {
+        font-size: 15px;
+    }
+
+    .styles__section {
+        background: #131313;
+    }
+
+    .styles__pictures, .request__form, .stages__list, .saving__notification, .styles__list, .clients__section {
+        display: none;
+    }
+
+    .styles__title {
+        text-align: center;
+        margin-top: -190px;
+        font-size: 22px;
+    }
+
+    .styles__contents {
+        flex-direction: column;
+    }
+
+    .styles__section-slider {
+        display: block;
+        position: absolute;
+        top: -112px;
+    }
+
+    .qa__form {
+        margin: -699px 0% 0;
+        background-color: #131313;
+    }
+
+    .qa__form-fields {
+        flex-direction: column;
+    }
+
+    .qa__form-question, .qa__form-input, .qa__form-fields, .qa__form {
+        width: 100%;
+    }
+
+    .button[type="submit"] {
+        left: 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .bottom__section {
+        background: none;
+        background-color: #131313;
+        height: 335px;
+    }
+
+    .mobile {
+        display: inline-block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .address {
+        font-size: 18px;
+        top: 162px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .contact__links {
+        margin: 248px 126px 0;
+        width: 85px;
+    }
+
+    .contact__links img {
+        width: 39px;
+        height: auto;
     }
 }
