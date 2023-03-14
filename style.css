@@ -34,7 +34,6 @@ body {
 
 .nav__bar {
     height: 83px;
-    width: 100vw;
     background-color: #131313;
     display: flex;
 
@@ -619,7 +618,7 @@ ul {
     justify-content: space-between;
 }
 
-.styles__section-slider {
+.styles__section-slider, .projects-examples {
     display: none;
 }
 
