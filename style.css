@@ -1226,6 +1226,7 @@ button[type="submit"] {
         overflow:hidden;
         left: -3px;
         top: -150px;
+        right: 0;
     }
 
     .map iframe {
