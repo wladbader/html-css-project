@@ -618,7 +618,7 @@ ul {
     justify-content: space-between;
 }
 
-.styles__section-slider, .projects-examples {
+.styles__section-slider {
     display: none;
 }
 
@@ -881,6 +881,18 @@ button[type="submit"] {
     display: inline-block;
 }
 
+.map {
+    position: absolute;
+    overflow: hidden;
+    right: 130px;
+    top: 430px;
+}
+
+.map iframe {
+    width: 1000px;
+    height: 500px;
+}
+
 @media screen and (max-width: 375.5px) {
     .container {
         width: 90%;
@@ -976,7 +988,7 @@ button[type="submit"] {
         margin-top: 60px;
     }
 
-    .projects-examples {
+    .projects-examples-mobile {
         width: 100%;
         height: auto;
         position: relative;
@@ -1207,5 +1219,17 @@ button[type="submit"] {
     .contact__links img {
         width: 39px;
         height: auto;
+    }
+
+    .map {
+        position: absolute;
+        overflow:hidden;
+        left: -3px;
+        top: -150px;
+    }
+
+    .map iframe {
+        width: 341px;
+        height: 250px;
     }
 }
