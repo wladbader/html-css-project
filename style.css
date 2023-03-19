@@ -51,6 +51,8 @@ body {
 }
 
 .logo {
+    display: block;
+    text-decoration: none;
     color: #E3B873;
 }
 
@@ -63,10 +65,12 @@ body {
 
 .nav__link {
     color: #fff;
+    text-decoration: none;
 }
 
-.nav__link_active {
+.nav__link:hover {
     color: #E3B873;
+    transition: .2s linear;
 }
 
 .button {
@@ -155,7 +159,7 @@ body {
     background-color: #da9f3f;
     border: 0;
     padding-left: 31px;
-    transition: .01s linear;
+    transition: .1s linear;
 }
 
 #intro__button_3 {
@@ -319,6 +323,7 @@ body {
     height: auto;
 
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .online__control {
@@ -400,6 +405,11 @@ body {
     color: #fff;
 }
 
+.submit__button:hover {
+    background-color: #da9f3f;
+    transition: .2s linear;
+}
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -407,20 +417,58 @@ body {
     margin: 35px auto 0;
 }
 
+.label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+#checkbox1 {
+    display: none;
+}
+
+.fake {
+    width: 18px;
+    height: 18px;
+    background-color: #E3B873;
+    color: #fff;
+    border-radius: 1px;
+}
+
+.fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+#checkbox1:checked + .fake::before {
+    opacity: 1;
+}
+
 .checkbox_mobile {
     display: none;
 }
 
-.checkbox span {
+.checkbox .agreement {
     padding-left: 5px;
     font-weight: 600;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
 }
 
-#checkbox1:checked {
-    background-color: #E3B873;
-    color: #fff;
+.checkbox2 .agreement {
+    padding-left: 5px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+.checkbox3 .agreement {
+    padding-left: 5px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
 }
 
 .types_of_repair {
@@ -576,10 +624,8 @@ ul {
 }
 
 .checkbox2 {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin: 0 50px 15px;
+    display: block;
+    margin: 19px 45px 21px;
 }
 
 .request__form_button {
@@ -590,6 +636,11 @@ ul {
     border-radius: 0;
     position: absolute;
     right: 50px;
+}
+
+.request__form_button:hover {
+    background-color: #da9f3f;
+    transition: .2s linear;
 }
 
 .saving__notification {
@@ -893,7 +944,7 @@ button[type="submit"] {
     height: 500px;
 }
 
-@media screen and (max-width: 375.5px) {
+@media screen and (max-width: 1301px) {
     .container {
         width: 90%;
     }
